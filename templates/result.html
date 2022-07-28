@@ -1,0 +1,9 @@
+% extends 'layout.html' %} {% block content %}
+<div class="container">
+  <h1>Text Analysis Result</h1>
+  <form action="https://buzotextanalyzer.herokuapp.com/result" method="POST">
+    <div>
+      <output name="content" />
+    </div>
+  </form>
+</div>
