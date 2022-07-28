@@ -2,7 +2,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 import os # importing operating system module
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 # to stop caching static file
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
